@@ -1,19 +1,31 @@
 .LaunchProfile {
     height: 100vh;
-    max-height: 100%;
-    width: calc(100vw - 300px);
+    /* max-height: 100%; */
+    /* width: calc(100vw - 300px); */
     overflow: hidden auto;
     padding-left: 20px;
     padding-right: 20px;
+    background-color: grey;
   }
   
   .LaunchProfile__status {
     margin-top: 40px;
+    margin-bottom: 20px;
+    border: 4px solid black;
+    padding: 10px;
+    border-radius: 12px;
+    width: 100px;
+    font-size: large;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    margin-left:600px ;
   }
   
   .LaunchProfile__title {
     margin-top: 0;
     margin-bottom: 4px;
+    text-decoration: underline  ;
   }
   
   .LaunchProfile__success {
@@ -23,15 +35,25 @@
   .LaunchProfile__failed {
     color: #ff695e;
   }
-  
+  .LaunchProfile__description{
+    color: white;
+    font-size: 1rem;
+    border: 3px solid black;
+    border-radius:12px ;
+    padding: 20px;
+  }
+
   .LaunchProfile__image-list {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 40px;
     padding-bottom: 100px;
+    /* display: flex;
+    justify-content: space-around; */
   }
   
   .LaunchProfile__image {
-    width: 100%;
+    width: 300px;
+    height: 200px;
   }
