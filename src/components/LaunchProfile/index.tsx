@@ -7,11 +7,10 @@ interface OwnProps {
 }
 
 const LaunchProfileContainer = ({ id }: OwnProps) => {
-  const { data, loading, error, refetch } = useLaunchProfileQuery({
+  const { data, loading, error } = useLaunchProfileQuery({
     variables: { id: String(id) },
   });
   React.useEffect(() => {
-    refetch()
   }, [id]);
   if (loading) {
     return <p>loading</p>;
